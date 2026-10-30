@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1> password strength checher</h1>
+    <input type="password" id="password" 
+    placeholder="enter password">
+    <button onclick="checkpassword()">check</button>
+    <p id="result"></p>
+    <script>    
+        function checkpassword() 
+        {
+        const password=document.getElementById
+            ("password").value;
+            const result=document.getElementById
+            ("result");
+            if(password.length>= 8){
+                result.textContent="your password is strong";
+        }
+        else{(password.length< 8)
+            result.textContent=" your password is weak, please enter srong password";
+        }
+    }
+    </script>
+    
+</body>
+</html>
